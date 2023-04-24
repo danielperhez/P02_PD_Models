@@ -10,7 +10,7 @@ from sklearn.linear_model import BayesianRidge
 
 # Raw Data
 # Load the raw data into a Pandas DataFrame
-data = pd.read_csv('files/credit_risk_data_v2.csv')
+data = pd.read_csv('credit_risk_data_v2.csv')
 
 # Handle missing values
 data = data.dropna()

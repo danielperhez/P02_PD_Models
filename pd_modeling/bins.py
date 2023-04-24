@@ -2,68 +2,64 @@ import sys
 
 
 bins = {
-    "customer_age": [
+    "loan_amnt": [
         {
             "label": "(-inf, 37)",
-            "max": 37
+            "max": 500
         },
         {
             "label": "(37, 40)",
-            "max": 40
+            "max": 14000
         },
         {
             "label": "(40, 46)",
-            "max": 46
-        },
-        {
-            "label": "(46, 58)",
-            "max": 58
+            "max": 35000
         },
         {
             "label": "(58, inf)",
             "max": sys.maxsize
         },
     ],
-    "months_at_address": [
+    "funded_amnt": [
         {
             "label": "(-inf, 23)",
-            "max": 23
+            "max": 500
         },
         {
             "label": "(23, 83)",
-            "max": 83
+            "max": 14000
+        },
+        {
+            "label": "(23, 83)",
+            "max": 35000
         },
         {
             "label": "(83, inf)",
             "max": sys.maxsize
         },
     ],
-    "income": [
+    "funded_amnt_inv": [
         {
             "label": "(-inf, 29000)",
-            "max": 29000
+            "max": 500
         },
         {
             "label": "(29000, 33000)",
-            "max": 33000
+            "max": 14000
         },
         {
             "label": "(33000, 42000)",
-            "max": 42000
-        },
-        {
-            "label": "(42000, 47000)",
-            "max": 47000
+            "max": 35000
         },
         {
             "label": "(47000, inf)",
             "max": sys.maxsize
         },
     ],
-    "months_with_bank": [
+    "term": [
         {
             "label": "(-inf, 12)",
-            "max": 12
+            "max": 36
         },
         {
             "label": "(12, 45)",
@@ -71,25 +67,211 @@ bins = {
         },
         {
             "label": "(45, 71)",
-            "max": 71
+            "max": 60
         },
         {
             "label": "(71, inf)",
             "max": sys.maxsize
         },
     ],
-    "balance": [
+    "int_rate": [
         {
             "label": "(-inf, 558)",
-            "max": 558
+            "max": 5
         },
         {
             "label": "(558, 1254)",
-            "max": 1254
+            "max": 14
         },
         {
             "label": "(1254, 1597)",
-            "max": 1597
+            "max": 26
+        },
+        {
+            "label": "(1597, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "installment": [
+        {
+            "label": "(-inf, 37)",
+            "max": 16
+        },
+        {
+            "label": "(37, 40)",
+            "max": 432
+        },
+        {
+            "label": "(40, 46)",
+            "max": 1410
+        },
+        {
+            "label": "(58, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "home_ownership": [
+        {
+            "label": "(-inf, 23)",
+            "max": 25
+        },
+        {
+            "label": "(23, 83)",
+            "max": 73
+        },
+        {
+            "label": "(83, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "annual_inc": [
+        {
+            "label": "(-inf, 29000)",
+            "max": 1896
+        },
+        {
+            "label": "(29000, 33000)",
+            "max": 73277
+        },
+        {
+            "label": "(33000, 42000)",
+            "max": 750000
+        },
+        {
+            "label": "(47000, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "verification_status": [
+        {
+            "label": "(-inf, 12)",
+            "max": 11
+        },
+        {
+            "label": "(12, 45)",
+            "max": 28
+        },
+        {
+            "label": "(71, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "total_acc": [
+        {
+            "label": "(-inf, 558)",
+            "max": 10
+        },
+        {
+            "label": "(558, 1254)",
+            "max": 25
+        },
+        {
+            "label": "(1254, 1597)",
+            "max": 156
+        },
+        {
+            "label": "(1597, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "total_pymnt": [
+        {
+            "label": "(-inf, 37)",
+            "max": 37
+        },
+        {
+            "label": "(37, 40)",
+            "max": 11400
+        },
+        {
+            "label": "(40, 46)",
+            "max": 57000
+        },
+        {
+            "label": "(58, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "total_pymnt_inv": [
+        {
+            "label": "(-inf, 37)",
+            "max": 37
+        },
+        {
+            "label": "(37, 40)",
+            "max": 11400
+        },
+        {
+            "label": "(40, 46)",
+            "max": 57000
+        },
+        {
+            "label": "(83, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "total_rec_prncp": [
+        {
+            "label": "(-inf, 29000)",
+            "max": 1000
+        },
+        {
+            "label": "(29000, 33000)",
+            "max": 8800
+        },
+        {
+            "label": "(33000, 42000)",
+            "max": 35000
+        },
+        {
+            "label": "(47000, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "total_rec_int": [
+        {
+            "label": "(-inf, 12)",
+            "max": 12
+        },
+        {
+            "label": "(12, 45)",
+            "max": 2589
+        },
+        {
+            "label": "(45, 71)",
+            "max": 24206
+        },
+        {
+            "label": "(71, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "last_pymnt_amnt": [
+        {
+            "label": "(-inf, 558)",
+            "max": 11
+        },
+        {
+            "label": "(558, 1254)",
+            "max": 3124
+        },
+        {
+            "label": "(1254, 1597)",
+            "max": 36234
+        },
+        {
+            "label": "(1597, inf)",
+            "max": sys.maxsize
+        },
+    ],
+    "status": [
+        {
+            "label": "(-inf, 558)",
+            "max": 11
+        },
+        {
+            "label": "(558, 1254)",
+            "max": 39
         },
         {
             "label": "(1597, inf)",

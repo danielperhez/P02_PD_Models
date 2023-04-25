@@ -4,7 +4,7 @@ import sys
 bins = {
     "loan_amnt": [
         {
-            "label": "(-inf, 37)",
+            "label": '(-inf, 37)',
             "max": 500
         },
         {
@@ -56,24 +56,6 @@ bins = {
             "max": sys.maxsize
         },
     ],
-    "term": [
-        {
-            "label": "(-inf, 12)",
-            "max": 36
-        },
-        {
-            "label": "(12, 45)",
-            "max": 45
-        },
-        {
-            "label": "(45, 71)",
-            "max": 60
-        },
-        {
-            "label": "(71, inf)",
-            "max": sys.maxsize
-        },
-    ],
     "int_rate": [
         {
             "label": "(-inf, 558)",
@@ -110,20 +92,6 @@ bins = {
             "max": sys.maxsize
         },
     ],
-    "home_ownership": [
-        {
-            "label": "(-inf, 23)",
-            "max": 25
-        },
-        {
-            "label": "(23, 83)",
-            "max": 73
-        },
-        {
-            "label": "(83, inf)",
-            "max": sys.maxsize
-        },
-    ],
     "annual_inc": [
         {
             "label": "(-inf, 29000)",
@@ -139,20 +107,6 @@ bins = {
         },
         {
             "label": "(47000, inf)",
-            "max": sys.maxsize
-        },
-    ],
-    "verification_status": [
-        {
-            "label": "(-inf, 12)",
-            "max": 11
-        },
-        {
-            "label": "(12, 45)",
-            "max": 28
-        },
-        {
-            "label": "(71, inf)",
             "max": sys.maxsize
         },
     ],
@@ -264,18 +218,5 @@ bins = {
             "max": sys.maxsize
         },
     ],
-    "status": [
-        {
-            "label": "(-inf, 558)",
-            "max": 11
-        },
-        {
-            "label": "(558, 1254)",
-            "max": 39
-        },
-        {
-            "label": "(1597, inf)",
-            "max": sys.maxsize
-        },
-    ]
+
 }
